@@ -7,9 +7,9 @@ import pickle
 stopwrds = stopwords.words('english')
 
 
-model_fpath ='./statics/rating_model.sav'
+model_fpath ='./static/rating_model.sav'
 clf = pickle.load(open(model_fpath, 'rb'))
-vect_path = './statics/vectorizer.sav'
+vect_path = './static/vectorizer.sav'
 vect = pickle.load(open(vect_path, 'rb'))
 
 

@@ -1,0 +1,15 @@
+numpy
+pickle
+nltk
+re
+scikit-learn
+Flask
+scikit-learn
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+pillow
+
+
