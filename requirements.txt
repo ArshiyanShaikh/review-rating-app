@@ -1,9 +1,7 @@
 numpy
 nltk
-re
 scikit-learn
 Flask==1.1.2
-scikit-learn
 gunicorn
 itsdangerous
 Jinja2
