@@ -1,9 +1,8 @@
 numpy
-pickle
 nltk
 re
 scikit-learn
-Flask
+Flask==1.1.2
 scikit-learn
 gunicorn
 itsdangerous
