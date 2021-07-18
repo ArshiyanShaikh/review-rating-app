@@ -49,7 +49,7 @@ def rating_prediction():
         vector = vect.transform([review])
         rating= clf.predict(vector)
         return render_template('index.html',rating =rating[0],review =review)
-    return render_template("index.html")
+    return render_template("login.html")
 
 
 
