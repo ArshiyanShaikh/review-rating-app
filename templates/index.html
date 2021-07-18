@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Rating App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Review Rating Prediction</h1>
+    </div>
+    <div class="form-horizontal" style="padding-left: 25px;">
+    <form action='/product_review' method="POST">
+        <div class='form-group'>
+        <label>Enter the Review :</label> <br>
+        <input type='text' id='review' name='review' class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:50%;width:50%;">
+        </div>
+        <input type='submit' value='Predict Rating' class="btn btn-default">
+    </form>
+    </div>
+
+    <div style="padding-left: 25px;text-align: center;">
+        <h2>{{review}}</h2>
+
+        {% if rating == 5 %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == 4 %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == 3 %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == 2 %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == 1 %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% endif %}
+
+        
+    </div>
+</body>
+</html>
